@@ -11,6 +11,7 @@ public class AppStat {
 	int saveFileCount = 0;
 	int saveFolderCount = 0;
 	int searchWordCount = 0;
+	int serializeCount = 0;
 	
 	public void appStat() {
 		System.out.println("Setup School ---> " + setupCount);
@@ -22,6 +23,7 @@ public class AppStat {
 		System.out.println("Search Students  ---> " + searchCount);
 		System.out.println("Save to file  ---> " + saveFileCount);
 		System.out.println("Save to folder  ---> " + saveFolderCount);
+		System.out.println("Serialize  ---> " + serializeCount);
 		System.out.println("Search word  ---> " + searchWordCount);
 	}
 }

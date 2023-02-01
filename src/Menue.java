@@ -12,8 +12,10 @@ public class Menue {
 		System.out.println("[6] App Statistics");
 		System.out.println("[7] Save to file");
 		System.out.println("[8] Save to folder");
-        System.out.println("[9] Search Word");
-        System.out.println("[10] Exit");
+        System.out.println("[9] Serialize");
+        System.out.println("[10] DeSerialize");
+        System.out.println("[11] Search Word");
+        System.out.println("[12] Exit");
         System.out.println("_________________");
 	}
 	

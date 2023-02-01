@@ -1,14 +1,16 @@
-import java.util.*;
+import java.util.*;     
 public class Main {
 	static School newSchool = new School();
 	static Menue mainMenue = new Menue();
 	static AppStat newStat = new AppStat();
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException {
 		Scanner sc1 = new Scanner(System.in);
 		SearchStudents searchStud = new SearchStudents();
 		SaveDataToFile saveFile = new SaveDataToFile();
 		SaveDataToFolder saveFolder = new SaveDataToFolder();
+		Serialize serialized = new Serialize();
+		DeSerialize deSerialized = new DeSerialize();
 		SearchWords searchword = new SearchWords();
 		PrintAll printAll = new PrintAll();
 		Mark addMark = new Mark();
@@ -68,29 +70,28 @@ public class Main {
 				break;
 				
 			case 9:
+				//Serialize
+				newStat.serializeCount = newStat.serializeCount + 1;
+				serialized.serialize();
+				break;
+				
+			case 10: 
+				//DeSerialize
+				deSerialized.deSerialize();
+				break;
+				
+			case 11:
 				//search for words in a file
 				newStat.searchWordCount = newStat.searchWordCount + 1;
 				searchword.searchWords();
 				break;
 				
-			case 10:
+			case 12:
 				//Exit
 				System.out.println("GOOD BYE");
 				menueLoop = false;
 				break;
 		}
 	}
-		
-		//Serialization
-//		try {
-//			FileOutputStream file = new FileOutputStream("StudentDetails.txt");
-//			ObjectOutputStream out = new ObjectOutputStream(file);
-//			out.write(newSchool.schoolName);
-//			out.close();
-//			file.close();
-//			System.out.println("Serialized and saved");
-//		} catch(Exception e) {
-//			e.printStackTrace();
-//		}
 }}
 
