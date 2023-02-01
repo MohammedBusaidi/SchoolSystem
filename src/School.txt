@@ -1,0 +1,9 @@
+School Name: school
+Subjects: math
+Students: ali
+math: 66.0School Name: schoool
+Subjects: math
+csd
+Students: mohammed
+math: 0.0csd: 0.0______________________________________________________School Name: alischool
+Subjects: Students: alooy

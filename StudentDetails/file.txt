@@ -1,0 +1,4 @@
+School Name: school
+Subjects: cs
+Students: mohammed
+cs: 50.0
